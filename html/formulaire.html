@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Rejoindre - ODD 2030</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-principal">
+            <a href="accueil.html">
+                <span class="icone-globe" aria-hidden="true">🌐</span>
+                <span class="texte-logo">ODD 2030</span>
+            </a>
+        </div>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="principes.html">Nos principes</a></li>
+                <li><a href="formulaire.html" class="actif">Nous rejoindre</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rubrique-formulaire element-a-reveler">
+            <h1 class="titre-formulaire">Donnez du sens à vos actions !</h1>
+            <p class="introduction-formulaire">Rejoignez-nous et contribuez aux Objectifs de Développement Durable. Remplissez le formulaire ci-dessous pour nous contacter ou nous faire part de vos idées.</p>
+
+            <div class="conteneur-formulaire">
+                <form action="mailto:loic.anglard@efrei.net" method="POST" class="formulaire-participation" enctype="text/plain">
+                    <div class="groupe-champ">
+                        <label for="nom-utilisateur" class="etiquette-formulaire">Votre Nom :</label> <input type="text" id="nom-utilisateur" name="nom" required placeholder="Ex: Pierre Dupont">
+                    </div>
+
+                    <div class="groupe-champ">
+                        <label for="email-utilisateur">Votre Adresse Email :</label>
+                        <input type="email" id="email-utilisateur" name="email" required placeholder="Ex: votre.email@example.com">
+                    </div>  
+
+                    <div class="groupe-champ">
+                        <label for="sujet-message">Sujet de votre message :</label>
+                        <input type="text" id="sujet-message" name="sujet" placeholder="Ex: Idée de projet, Demande d'information...">
+                    </div>
+
+                    <div class="groupe-champ">
+                        <label for="corps-message">Votre Message / Commentaire :</label>
+                        <textarea id="corps-message" name="message" rows="6" placeholder="Écrivez votre message ici..."></textarea>
+                    </div>
+
+                    <button type="submit" class="bouton-soumission">Envoyer →</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenu-pied-page">
+            <div class="logo-pied-page">
+                <h3>ODD 2030</h3>
+                <p>Site éducatif dédié aux 17 Objectifs de Développement Durable définis par l'ONU.</p>
+                <p class="credit-projet"> Projet réalisé à l'Efrei</p>
+            </div>
+            
+            <div class="navigation-pied-page">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="principes.html">Nos principes</a></li>
+                    <li><a href="formulaire.html">Nous rejoindre</a></li>
+                    <li><a href="contact.html">Contact</a></li>   
+                </ul>
+            </div>
+            
+            <div class="contact-pied-page">
+                <h3>Restons en contact</h3>
+                <ul>
+                    <li><a href="formulaire.html">📧 Écrivez-nous</a></li>
+                    <li><a href="contact.html">ℹ️ Qui sommes-nous ?</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="bas-pied-page">
+            <p>© 2025 - Site créé dans le cadre de Programmation WEB.</p>
+            <p>Inspiré par les travaux de Tristan et Loïc.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

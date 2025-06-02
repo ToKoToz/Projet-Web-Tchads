@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODD 2030 - Objectifs de Développement Durable</title>
+    <link rel="stylesheet" href="../css/style.css"> </head>
+<body>
+    <header>
+        <div class="logo-principal"> <a href="accueil.html">
+                <span class="icone-globe" aria-hidden="true">🌐</span>
+                <span class="texte-logo">ODD 2030</span> </a>
+        </div>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="accueil.html" class="actif">Accueil</a></li> <li><a href="principes.html">Nos principes</a></li>
+                <li><a href="formulaire.html">Nous rejoindre</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rubrique-carte-interactive element-a-reveler"> <h2>Explorer les Problématiques Urbaines</h2>
+            <div class="groupe-champ-ville"> <input type="text" id="champVille" placeholder="Entrez le nom d'une ville..."> <button id="boutonRechercheVille">Rechercher</button> </div>
+            <div id="carteErreur" class="message-info-carte" aria-live="polite"></div> <div id="conteneurCarteOsm"> <iframe 
+                    id="carteAffichageOsm" title="Carte OpenStreetMap"
+                    width="100%" 
+                    height="450" 
+                    style="border:1px solid #ccc; border-radius: 8px;"
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    src="about:blank">
+                </iframe>
+            </div>
+            
+            <div id="conteneurAnalyseVille" class="element-a-reveler"> <h3>Analyse pour : <span id="nomVilleAnalyse">-</span></h3> <div id="resultatsAnalyse" class="message-info-carte" aria-live="polite"> <p>L'analyse des problématiques de la ville apparaîtra ici.</p>
+                </div>
+                <div id="erreurAnalyse" class="message-info-carte" aria-live="polite"></div> </div>
+        </section>
+
+        <section class="rubrique-themes element-a-reveler"> <h1>Les 4 thèmes principaux</h1>
+            
+            <div class="conteneur-blocs"> <div class="bloc-presentation bloc-couleur-un element-a-reveler"> <div class="entete-bloc"> <span class="icone-bloc">👥</span> <h2>Personnes & Prospérité</h2>
+                    </div>
+                    <p>Éliminer la pauvreté et la faim, assurer la dignité, l'égalité et un environnement sain</p>
+                    <a href="principes_pages/principe1.html" class="lien-savoir-plus">En savoir plus →</a> </div>
+                
+                <div class="bloc-presentation bloc-couleur-deux element-a-reveler"> <div class="entete-bloc">
+                        <span class="icone-bloc">🌍</span>
+                        <h2>Planète</h2>
+                    </div>
+                    <p>Protéger les ressources naturelles et le climat de notre planète pour les générations futures</p>
+                    <a href="principes_pages/principe2.html" class="lien-savoir-plus">En savoir plus →</a>
+                </div>
+                
+                <div class="bloc-presentation bloc-couleur-trois element-a-reveler"> <div class="entete-bloc">
+                        <span class="icone-bloc">⚖️</span>
+                        <h2>Paix & Justice</h2>
+                    </div>
+                    <p>Promouvoir des sociétés pacifiques, justes et inclusives</p>
+                    <a href="principes_pages/principe3.html" class="lien-savoir-plus">En savoir plus →</a>
+                </div>
+                
+                <div class="bloc-presentation bloc-couleur-quatre element-a-reveler"> <div class="entete-bloc">
+                        <span class="icone-bloc">🤝</span>
+                        <h2>Partenariats</h2>
+                    </div>
+                    <p>Mise en œuvre du programme par le biais d'une solidarité mondiale</p>
+                    <a href="principes_pages/principe4.html" class="lien-savoir-plus">En savoir plus →</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="rubrique-rejoindre-mouvement element-a-reveler"> <h2>Rejoignez le mouvement</h2>
+            <p>Ensemble, nous pouvons faire la différence. Découvrez comment vous pouvez contribuer à atteindre les Objectifs de Développement Durable.</p>
+            <a href="formulaire.html" class="bouton-contact">Contactez-nous →</a> </section>
+        
+        <section class="rubrique-objectifs-odd element-a-reveler"> <div class="contenu-objectifs"> <h2>Les 17 Objectifs de Développement Durable</h2>
+                <p>Un plan d'action universel pour éliminer la pauvreté, protéger la planète et garantir la prospérité pour tous d'ici 2030.</p>
+                <a href="principes.html" class="bouton-decouverte">Découvrir les objectifs →</a> </div>
+        </section>
+        
+        <section class="rubrique-a-propos-odd element-a-reveler"> <h2>Qu'est-ce que les ODD?</h2>
+            <p>Les Objectifs de Développement Durable (ODD) ont été adoptés par l'ONU en 2015 comme un appel universel à l'action pour mettre fin à la pauvreté, protéger la planète et améliorer la vie et les perspectives de chacun, partout. Les 17 objectifs sont intégrés—ils reconnaissent que l'action dans un domaine affectera les résultats dans d'autres et que le développement doit équilibrer la durabilité sociale, économique et environnementale.</p>
+            <div class="conteneur-image-odd"> <img src="../img/ODD.jpg" alt="Les 17 Objectifs de Développement Durable">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenu-pied-page"> <div class="logo-pied-page"> <h3>ODD 2030</h3>
+                <p>Site éducatif dédié aux 17 Objectifs de Développement Durable définis par l'ONU.</p>
+                <p class="credit-projet"> Projet réalisé à l'Efrei</p> </div>
+            
+            <div class="navigation-pied-page"> <h3>Navigation</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="principes.html">Nos principes</a></li>
+                    <li><a href="formulaire.html">Nous rejoindre</a></li>
+                    <li><a href="contact.html">Contact</a></li>   
+                </ul>
+            </div>
+            
+            <div class="contact-pied-page"> <h3>Restons en contact</h3>
+                <ul>
+                    <li><a href="formulaire.html">📧 Écrivez-nous</a></li>
+                    <li><a href="contact.html">ℹ️ Qui sommes-nous ?</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="bas-pied-page"> <p>© 2025 - Site créé dans le cadre de Programmation WEB.</p>
+            <p>Inspiré par les travaux de Tristan et Loïc.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
